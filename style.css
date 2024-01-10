@@ -1,0 +1,1021 @@
+
+:root{
+    --orange: #EE626B;
+    --primary-blue: #0171F9;
+    --secondary-blue: #008AF8 ;
+    --transition: all 0.3s;
+}
+
+/* All common and RESET codes are here */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+body{
+    max-width: 100%;
+    padding: 6px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    background-color: var(--orange);
+    color: #fff;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background-color: var(--primary-blue);
+}
+
+.img-width-100{
+    width: 100%;
+}
+
+input[type=text],
+input[type=email]{
+    border: none;
+    padding:16px 26px;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+    width: 100%;
+}
+
+.small-text{
+    color: var(--orange);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 70px;
+}
+
+.common-h2{
+    font-size: 2.4rem;
+    color: #1E1E1E;
+    font-weight: 900;
+}
+
+.input-bar{
+    position: relative;
+    max-width: 500px;
+}
+
+.input-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px 20px;
+    border-radius: 30px;
+}
+
+/* All common and RESET codes are here */
+
+.home-section{
+    max-width: 100%;
+    /* height: 120vh; */
+    padding-bottom: 25vh;
+    background: url(images/banner-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 0 150px 150px;
+    position: relative;
+}
+
+/* ------------------------HEADER------------------------- */
+
+
+.header{
+    padding: 3% 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.nav-link{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 10px 20px;
+    transition: var(--transition);
+}
+
+.nav-link:hover{
+    background-color: #ffffff24;
+    border-radius: 30px;
+}
+
+.active{
+    background-color: #ffffff24;
+    border-radius: 30px;
+}
+
+.sign-in-btn:hover{
+    background-color: #EE626B;
+}
+
+
+
+/* ------------------------HEADER------------------------- */
+
+/* -------------------------HERO-------------------------- */
+
+.hero-section{
+    padding: 2% 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.hero-contents{
+    max-width: 645px;
+    margin-right: 50px;
+}
+.hero-contents h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px ;
+    text-transform: uppercase;
+    line-height: 70px;
+}
+
+.hero-contents h1{
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.gaming-txt{
+    position: relative;
+}
+
+.gaming-txt::after{
+    content: url(images/caption-dec.png);
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+.hero-contents p{
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 50px 0;
+    line-height: 27px;
+}
+
+
+
+.hero-img img{
+    border-radius: 30px;
+}
+
+.hero-image{
+    position: relative;
+}
+
+.hero-price{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    font-weight: 900;
+    background-color: var(--primary-blue);
+    border-radius: 30px;
+}
+.hero-offer{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    color: #fff;
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: 900;
+    background-color: var(--orange);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+/* -------------------------HERO-------------------------- */
+
+/* -------------------------FEATURE-------------------------- */
+
+.feature-section{
+    width: 100%;
+    position: absolute;
+    bottom: -12%;
+    padding: 0 6%;
+}
+
+.features{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.feature{
+    max-width: 300px;
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 0 15px #0000004a;
+    cursor: pointer;
+}
+
+.feature-img{
+    width: 95px;
+    height: 95px;
+    background-color: var(--primary-blue);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: var(--transition);
+}
+
+.feature-img:hover{
+    background-color: var(--orange);
+}
+
+.feature h2{
+    font-size: 1.2rem;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+
+/* -------------------------FEATURE-------------------------- */
+
+/* -------------------------TRENDING-------------------------- */
+.trending{
+    margin: 30vh 0 5vh 0;
+    padding: 0 6%;
+}
+
+.trending-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.trending-header button{
+    padding: 16px 27px;
+    border-radius: 50px;
+}
+
+.trend-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.trend-card{
+    position: relative;
+    max-width: 310px;
+    border-radius: 30px;
+    background-color: #EEEEEE;
+}
+
+.card:hover .card-head-text{
+    color: var(--primary-blue);
+}
+
+.card:hover .fa-bag-shopping{
+    background-color: var(--primary-blue);
+}
+
+.trend-card-img img{
+    border-radius: 30px;
+}
+
+.trend-card-price{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--secondary-blue);
+    padding: 12px 16px;
+    border-radius: 13px;
+    color: #fff;
+    text-align: right;
+}
+
+.trend-price{
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: block;
+}
+
+.trend-card-detail{
+    padding: 20px;
+}
+
+.card-small-text{
+    color: #7A7C81;
+}
+
+
+.assasin-creed{
+    display: flex;
+    justify-content: space-between;
+    margin: -10px 0 8px 0;
+    align-items: end;
+}
+
+.card-head-text{
+    font-size: 1.15rem;
+    transition: all 0.2s;
+}
+
+.fa-bag-shopping{
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    background-color: var(--orange);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.15rem;
+    text-align: center;
+    transition: all 0.2s;
+
+}
+
+/* -------------------------TRENDING-------------------------- */
+
+/* -------------------------MOST PLAYED-------------------------- */
+
+.most-played{
+    background-color: #F7F7F7;
+    border-radius: 150px;
+    padding: 7% 6%;
+    margin: 8% 0;
+}
+
+.most-played-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.most-played-header button{
+    padding: 16px 27px;
+    border-radius: 50px;
+}
+
+.top-game-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.top-card{
+    position: relative;
+    max-width: 195px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 5px #00000046;
+}
+
+.top-card-img{
+    border-radius: 30px;
+}
+
+.top-card-detail{
+    text-align: center;
+    padding: 20px 10px 40px 10px;
+}
+
+.explore-btn{
+    position: absolute;
+    max-width: 110px;
+    bottom: -17px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.card:hover .card-explore-btn{
+    background-color: var(--primary-blue);
+}
+
+
+/* -------------------------MOST PLAYED-------------------------- */
+
+/* -------------------------TOP CATEGORIES-------------------------- */
+
+.top-categories{
+    text-align: center;
+    padding: 1% 6%;
+    margin-bottom: 100px;
+}
+
+.categories{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 70px;
+}
+
+.category{
+    background-color: var(--primary-blue);
+    border-radius: 30px;
+}
+
+.category h2{
+    color: #fff;
+    line-height: 60px;
+    font-size: 1.1rem;
+}
+
+.category img{
+    border-radius: 30px;
+    display: block;
+}
+
+
+
+/* -------------------------TOP CATEGORIES-------------------------- */
+
+/* -------------------------Our shop section-------------------------- */
+.color-blue{
+    color: var(--primary-blue);
+}
+.shop-news-section{
+    margin-bottom: 34vh;
+    padding: 1% 6%;
+    height: 70vh;
+}
+
+.section-wrapper{
+    position: relative;
+}
+
+.our-shop button{
+    padding: 16px 27px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    letter-spacing: 0.6px;
+}
+
+.cta-bg{
+    border-radius: 30px;
+    width: 550px;
+    z-index: 1;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.cta-bg img{
+    display: block;
+}
+
+.box{
+    position: absolute;
+    background-color: #F7F7F7;
+    padding: 5% 3%;
+    border-radius: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0px 0px 10px #00000034;
+}
+
+.our-shop{
+    left: 0;
+    bottom: -130px;
+}
+
+.our-shop p{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #4A4A4A;
+    line-height: 30px;
+    margin: 60px 0;
+}
+
+.newsletter{
+    right: 0;
+    bottom: -130px;
+}
+
+.newsletter .input-bar{
+    margin-top: 60px;
+}
+
+.newsletter input{
+    border: 4.5px solid #F7F7F7;
+}
+
+.newsletter .input-btn{
+    font-weight: 500;
+    top: 4.5px;
+    right: 4.5px;
+}
+
+
+.email-input:focus{
+    border: 4.5px solid #0088f862;
+}
+
+/* -------------------------Our shop section-------------------------- */
+
+footer{
+    background: url(images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    border-radius: 150px 150px 0 0 ;
+}
+
+footer p{
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 1.1rem;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+
+/*=====================================================
+                 responsive design here
+====================================================== */
+
+@media screen and (max-width:1200px){
+    .box{
+        position: absolute;
+        background-color: #F7F7F7;
+        padding: 5% 3%;
+        border-radius: 30px;
+        max-width: 400px;
+        width: 100%;
+        box-shadow: 0px 0px 10px #00000034;
+    }
+    
+}
+
+/* for large device */
+@media screen and (max-width:992px){
+    .home-section{
+        padding: 4% 12% 20% 12%;
+    }
+    
+    .header{
+        padding: 0;
+    }
+
+    .logo-div{
+        width: 100px;
+    }
+    
+    .navbar-nav{
+        gap: 8px;
+    }
+    
+    
+    .nav-link{
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .sign-in-btn{
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 10px;
+    }
+    
+    .sign-in-btn:hover{
+        background-color: #EE626B;
+    }
+
+    /* ====================================================== */
+
+    .hero-section{
+        padding: 0;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .hero-contents{
+        max-width: 100%;
+        margin-top: 150px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .hero-contents .input-bar{
+        max-width: 100%;
+    }
+
+    .hero-image{
+        width: 100%;
+    }
+
+    .hero-img img{
+        min-width: 100%;
+    }
+
+    /* ====================================================== */
+    
+    .feature-section{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -20%;
+        margin: 0 auto;
+        padding: 0 12%;
+    }
+    
+    .features{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .feature{
+        max-width: 100%;
+        width: 100%;
+        height: 200px;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        gap: 20px;
+        box-shadow: 0 0 15px #0000004a;
+        cursor: pointer;
+    }
+    
+    /* ====================================================== */
+    
+    .trending{
+        margin: 60vh 0 5vh 0;
+        padding: 0 12%;
+    }
+    
+    .trending-header button{
+        display: none;
+    }
+    
+    .trend-cards{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 25px;
+    }
+    .card{
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    /* ====================================================== */
+
+    
+    .most-played{
+        background-color: #F7F7F7;
+        border-radius: 150px;
+        padding: 10% 12%;
+        margin: 8% 0;
+    }
+
+    .most-played .small-text{
+        display: block;
+        text-align: center;
+    }
+
+    .most-played-header{
+        display: block;
+    }
+
+    .most-played-header h2{
+        text-align: center;
+    }
+
+    .most-played-header button{
+        display: none;
+    }
+
+    .top-game-cards{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        row-gap: 45px;
+        column-gap: 30px;
+    }
+
+    .top-card{
+        max-width: 100%;
+    }
+
+    
+    /* ====================================================== */
+
+    .top-categories{
+        padding: 1% 12%;
+        margin-bottom: 100px;
+    }
+    
+    .categories{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+        column-gap: 30px;
+    }
+    
+    .category{
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    /* ====================================================== */
+    
+    .shop-news-section{
+        margin-bottom: 0;
+        padding: 1% 12%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+    
+    .section-wrapper{
+        position: relative ;
+    }
+    
+    .our-shop button{
+        padding: 16px 27px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        letter-spacing: 0.6px;
+    }
+    
+    .cta-bg{
+        display: none;
+    }
+    
+    .cta-bg img{
+        display: none;
+    }
+    
+    .box{
+        position: static;
+        max-width: 100%;
+        width: 100%;
+        padding: 5% 6%;
+        box-shadow: none;
+        margin-bottom: 40px;
+    }
+    
+    footer{
+        padding: 2% 12%;
+    }
+    
+
+/* for medium devices */
+@media screen and (max-width:768px){
+    
+    .home-section{
+        padding: 4% 5% 30% 5%;
+        margin-bottom: 135vh;
+    }
+
+    .navbar-nav{
+        gap: 5px;
+    }
+    
+    
+    .nav-link{
+        font-size: 0.8rem;
+        padding: 7px;
+    }
+
+    .sign-in-btn{
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 8px;
+    }
+    
+    
+    /* ====================================================== */
+
+    .hero-section{
+        padding: 0 12%;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    
+
+    /* ====================================================== */
+
+    .feature-section{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -59%;
+        padding: 0 16%;
+    }
+    
+    .features{
+        display: block;
+    }
+
+    .feature{
+        margin-bottom: 50px;
+    }
+
+    /* ====================================================== */
+
+    .trending{
+        margin: 60vh 0 5vh 0;
+        padding: 0 16%;
+    }
+    
+    .trending-header button{
+        display: none;
+    }
+    
+    .trend-cards{
+        display: block;
+    }
+    
+    .trend-card{
+        margin-bottom: 50px;
+    }
+    
+    /* ====================================================== */
+
+    .most-played{
+        padding: 3% 16%;
+    }
+
+    /* ====================================================== */
+
+    .top-categories{
+        padding: 1% 16%;
+        margin-bottom: 100px;
+    }
+
+
+
+    /* ====================================================== */
+
+    .shop-news-section{
+        margin-bottom: 0;
+        padding: 1% 16%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width:600px){
+    .home-section{
+        padding: 4% 5% 30% 5%;
+        margin-bottom: 135vh;
+    }
+
+    .header{
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .navbar-nav{
+        gap: 30px;
+        flex-direction: column;
+    }
+    
+    
+    .nav-link{
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 300;
+        padding: 10px 20px;
+        transition: var(--transition);
+    }
+    
+    .nav-link:hover{
+        background-color: #ffffff24;
+        border-radius: 30px;
+    }
+    
+    .sign-in-btn{
+        font-size: 1rem;
+        padding: 10px 30px;
+    }
+
+
+    .hero-section{
+        padding: 0;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .hero-img img{
+        width: 100%;
+    }
+
+    .feature-section{
+        padding: 0 5%;
+        bottom: -56em;
+    }
+
+    .feature{
+        height: 200px;
+    }
+    
+    .trending{
+        margin: 60vh 0 5vh 0;
+        padding: 0 5%;
+    }
+
+    .most-played{
+        padding: 3% 5%;
+    }
+
+    .top-game-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .top-categories{
+        padding: 1% 5%;
+    }
+
+    .categories{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .shop-news-section{
+        padding: 1% 5%;
+    }
+ 
+    .newsletter .input-bar{
+        margin-top: 60px;
+    }
+    
+    
+    .newsletter .input-btn{
+        position: static;
+        width: 100%;
+        letter-spacing: 1px;
+        margin:20px 0;
+    }
+
+    footer{
+        position: relative;
+    }
+
+    footer span{
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+
+}
